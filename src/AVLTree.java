@@ -36,7 +36,7 @@ public class AVLTree {
       troot.right= insert(data, troot.right);
       if(height(troot.right)- height(troot.left)== 2)
       {
-        if(data<troot.right.data)
+        if(data>troot.right.data)
         {
           troot = LeftLeftRoattion(troot);
         }
